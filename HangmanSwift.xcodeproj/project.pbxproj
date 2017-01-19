@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42A840041E30CF640069CABC /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A840031E30CF640069CABC /* test.swift */; };
 		42BEE7151E2F81C0001DE3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEE7141E2F81C0001DE3E4 /* AppDelegate.swift */; };
 		42BEE7171E2F81C0001DE3E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEE7161E2F81C0001DE3E4 /* ViewController.swift */; };
 		42BEE71A1E2F81C0001DE3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BEE7181E2F81C0001DE3E4 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42A840031E30CF640069CABC /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		42BEE7111E2F81C0001DE3E4 /* HangmanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangmanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BEE7141E2F81C0001DE3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42BEE7161E2F81C0001DE3E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				42BEE71D1E2F81C0001DE3E4 /* LaunchScreen.storyboard */,
 				42BEE7201E2F81C0001DE3E4 /* Info.plist */,
 				42BEE7181E2F81C0001DE3E4 /* Main.storyboard */,
+				42A840031E30CF640069CABC /* test.swift */,
 			);
 			path = HangmanSwift;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				42BEE73A1E2F8958001DE3E4 /* GameController.swift in Sources */,
 				42BEE7361E2F88F0001DE3E4 /* Player.swift in Sources */,
 				42BEE7341E2F88F0001DE3E4 /* Category.swift in Sources */,
+				42A840041E30CF640069CABC /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +363,7 @@
 				42BEE7251E2F81C0001DE3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
