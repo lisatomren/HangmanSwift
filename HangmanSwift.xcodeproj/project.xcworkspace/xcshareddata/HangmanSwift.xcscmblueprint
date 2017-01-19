@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E29EB81CEAFFD3FDD90666154F04A9B10F08F05B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E29EB81CEAFFD3FDD90666154F04A9B10F08F05B" : 9223372036854775807,
+    "B42CEA737752B658925040B3D9FF250C01125CB5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F8D0ABE1-4F40-4250-AA63-72C96EF1E1A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E29EB81CEAFFD3FDD90666154F04A9B10F08F05B" : "HangmanSwift\/",
+    "B42CEA737752B658925040B3D9FF250C01125CB5" : "hangman\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HangmanSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HangmanSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lisatomren\/hangman.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B42CEA737752B658925040B3D9FF250C01125CB5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lisatomren\/HangmanSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E29EB81CEAFFD3FDD90666154F04A9B10F08F05B"
+    }
+  ]
+}
