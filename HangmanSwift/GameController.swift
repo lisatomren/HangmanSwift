@@ -35,8 +35,6 @@ class GameController: UIViewController {
         wordPlayingLabel.text = player.wordPlaying
         hangmanAnimationImage.image = UIImage(named: player.hangmanImageName)
         categoryIcon.image = UIImage( named: categoryChosen.tabBarIcon)
-    
-    
     }
     
     
@@ -54,19 +52,13 @@ class GameController: UIViewController {
         wordPlayingLabel.text = player.wordPlaying
         hangmanAnimationImage.image = UIImage(named: player.hangmanImageName)
         
-        
-        if(player.won )
-        {
-            self.perform(#selector(goToGameResultView), with: nil, afterDelay: 1.0)
-        }
-        
-        if( player.lost )
+        if( player.lost || player.won )
         {
             goToGameResultView()
+            //self.perform(#selector(goToGameResultView), with: nil, afterDelay: 1.0) //1 sec
         }
         
     }
-
     
     //Segue - set player in game result controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

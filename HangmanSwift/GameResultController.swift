@@ -26,9 +26,12 @@ class GameResultController: UIViewController {
             resultLabel.text = "You lost!"
             resultIcon.image = UIImage( named: "crying.png")
         }
-        else{
+        else if player.won{
             resultLabel.text = "You won!"
             resultIcon.image = UIImage( named: "smiling.png")
+        }
+        else { // testing
+         resultLabel.text = "lives: " + String (player.lives)
         }
         
         correctWordLabel.text = "correct word was: " + player.correctWord

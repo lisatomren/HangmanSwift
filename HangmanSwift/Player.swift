@@ -18,32 +18,28 @@ class Player {
     var categoryIcon: UIImage?
     var hangmanImageName : String = ""
     var correctWord: String
-    var winnerWords: [String]? // not in use yet
+    //var winnerWords: [String]? // not in use yet
     var wordPlaying: String = ""
-    var lost = false
-    var won = false
+    
+    var won: Bool {
+        return (!wordPlaying.characters.contains(defaultWordPlayingSymbol))
+    }
+    
+    var lost: Bool {
+        return lives == 0
+    }
     
     
     init(lives: Int = totalLives, categoryIcon: UIImage?, correctWord: String ){
         self.lives = lives
         self.categoryIcon = categoryIcon
         self.correctWord = correctWord
-        self.wordPlaying = getDefaultWordPlaying()
+        self.wordPlaying = String (Array(repeating:defaultWordPlayingSymbol, count: correctWord.characters.count))
         self.hangmanImageName = getHangmanImage()
     }
     
     
-    //get default word playing with symbol *
-    func getDefaultWordPlaying() -> String {
-        
-        var defaultWordPlaying = ""
-        for _ in correctWord.characters{
-            defaultWordPlaying.insert( defaultWordPlayingSymbol, at: wordPlaying.endIndex  )
-        }
-        return defaultWordPlaying
-    }
-    
-    //update word playing
+    //char btn tapped, update word playing
     func updateWordPlaying( _ tappedChar: Character )    {
 
         for i in 0...correctWord.characters.count-1 {
@@ -82,24 +78,16 @@ class Player {
         return imageName
     }
     
-    
-    func hasLetter( _ tappedChar: Character) -> Bool
-    {
-        return correctWord.characters.contains(tappedChar)
-    }
-    
     //update Player
     func update( tappedChar: Character ){
         
-        if( hasLetter( tappedChar ) ) { //player tapped correct char
+        if( correctWord.characters.contains( tappedChar ) ) { //correct char tapped
             updateWordPlaying(tappedChar)
-            won = (!wordPlaying.characters.contains(defaultWordPlayingSymbol))
         }
         else // wrong char tapped
         {
-            lives -= 1         
-            lost = ( lives == 0 )
-            hangmanImageName = getHangmanImage()
+            lives -= 1
+            hangmanImageName = getHangmanImage() // update hangman image
         }
     }
     
